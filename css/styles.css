@@ -11,6 +11,7 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     flex: 1;
     justify-content: center;
     align-items: center;
@@ -23,6 +24,18 @@ body {
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 991px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 400px;
+        border-radius: 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+            0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 }
 
 .left,
@@ -86,7 +99,7 @@ body {
     color: #444;
 }
 
-.button {
+.btn {
     display: block;
     margin-top: 30px;
     padding: 12px;
@@ -99,11 +112,11 @@ body {
     transition: background 0.3s;
 }
 
-.button:hover {
+.btn:hover {
     background: rgb(28, 26, 138);
 }
 
 
-.button:focus {
+.btn:focus {
     outline-style: none;
 }
